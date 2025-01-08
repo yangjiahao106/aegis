@@ -1,6 +1,7 @@
 package bbr
 
 import (
+	"fmt"
 	"math"
 	"runtime"
 	"sync/atomic"
@@ -46,6 +47,7 @@ func cpuproc() {
 		stat.Usage = min(stat.Usage, 1000)
 		prevCPU := atomic.LoadInt64(&gCPU)
 		curCPU := int64(float64(prevCPU)*decay + float64(stat.Usage)*(1.0-decay))
+		fmt.Printf("%v gCPU:%v\n", time.Now().Format("2006-01-02 15:04:05.000"), curCPU)
 		atomic.StoreInt64(&gCPU, curCPU)
 	}
 }
