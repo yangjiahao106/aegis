@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/go-kratos/aegis/ratelimit"
 	"github.com/yangjiahao106/aegis/internal/cpu"
 	"github.com/yangjiahao106/aegis/internal/window"
-	"github.com/yangjiahao106/aegis/ratelimit"
 )
 
 var (
