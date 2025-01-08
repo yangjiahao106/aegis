@@ -1,7 +1,7 @@
 package subset
 
 import (
-	"github.com/go-kratos/aegis/internal/consistent"
+	"github.com/yangjiahao106/aegis/internal/consistent"
 )
 
 func Subset[M consistent.Member](selectKey string, inss []M, num int) []M {

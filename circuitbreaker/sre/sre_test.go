@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kratos/aegis/internal/window"
 	"github.com/stretchr/testify/assert"
+	"github.com/yangjiahao106/aegis/internal/window"
 	"golang.org/x/exp/rand"
 )
 

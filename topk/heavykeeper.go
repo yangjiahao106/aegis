@@ -6,8 +6,8 @@ package topk
 import (
 	"math"
 
-	"github.com/go-kratos/aegis/internal/minheap"
 	"github.com/twmb/murmur3"
+	"github.com/yangjiahao106/aegis/internal/minheap"
 	"golang.org/x/exp/rand"
 )
 

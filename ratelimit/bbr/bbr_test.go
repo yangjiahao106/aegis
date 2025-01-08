@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kratos/aegis/internal/window"
-	"github.com/go-kratos/aegis/ratelimit"
 	"github.com/stretchr/testify/assert"
+	"github.com/yangjiahao106/aegis/internal/window"
+	"github.com/yangjiahao106/aegis/ratelimit"
 	"golang.org/x/exp/rand"
 )
 
